@@ -595,7 +595,7 @@ function plot(flattice::FiniteLattice;
     if d == 2
         if ax == nothing
             f = Figure()
-            ax = Axis(f[1, 1])
+            ax = Axis(f[1, 1], aspect=DataAspect())
             show = true
         else
             show = false
@@ -639,7 +639,7 @@ function plot_opsum(opsum::OpSum, flattice::FiniteLattice;
     if d == 2
         if ax == nothing
             f = Figure()
-            ax = Axis(f[1, 1])
+            ax = Axis(f[1, 1], aspect=DataAspect())
             show = true
         else
             show = false
